@@ -13,10 +13,10 @@
         <form>
 
             <label for="pNome"> Nome: </label>
-            <input type="text" name="nome" id="pNome" placeholder="Digite seu nome:"> 
+            <input type="text" required name="nome" id="pNome" placeholder="Digite seu nome:"> 
 
             <label for="sobreNome"> Sobrenome: </label>
-            <input type="text" name="sobrenome" id="sobreNome"> <br>
+            <input type="text" name="sobrenome" id="sobreNome"><br>
 
             <h3>Selecione seu curso:</h3>
             <input type="radio" name="curso" id="tinf">
@@ -37,7 +37,32 @@
             <label for="senha"Defina uma senha:></label> 
             <input type="password">
 
+            <div class="conteudo disciplina">
+                <h3> Escolha as disciplinas favoritas</h3>
+                <input type="checkbox" id="geo">
+                <label for="geo">Geografia</label><br>
+                <input type="checkbox" id="port">
+                <label for="port">Portugues</label><br>
+                <input type="checkbox" id="mat">
+                <label for="mat">Matematica</label><br>
+                <input type="checkbox" id="mm">
+                <label for="mm">Montagem e Manutenção</label><br>
+                <input type="checkbox" id="lp2">
+                <label for="lp2">Laboratorio de Programação II</label><br>
+            </div>
+            <div class="ano">
+                <h3>Escolha o ano cursado</h3>
+                <select>
+                    <option value="1">1° ano</option>
+                    <option value="2">2° ano</option>
+                    <option value="3">3° ano</option>
+                </select>
+            </div>
+            <textarea rows="20" cols="60"> Digite aqui sua mensagem:</textarea><br>
+            <button onclick="alert('Preencha o campo nome!')"> Enviar dados</button>
 
+        <p>Agora, para saber mais sobre Flaxbox, vamos acessar outra página
+        <a href="flexbox.html">clicando aqui!</a>
         </form>
     </div>
 </body>
